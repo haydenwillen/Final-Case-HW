@@ -21,7 +21,8 @@
   3) Matplotlib renders a figure to PNG in-memory; stats endpoint renders a Jinja template or JSON.  
   4) Response is sent with cache-busting headers to avoid stale images.  
   5) Docker image bakes code + dataset; `MPLCONFIGDIR` set to a writable temp dir.  
-  **Flow Chart**
+  
+**Flow Chart**
   <img width="1234" height="691" alt="Screenshot 2025-12-01 at 1 27 11 PM" src="https://github.com/user-attachments/assets/b62d547d-778f-4cc0-8a1c-43fe175c0e5c" />
 
 
