@@ -9,7 +9,16 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-import app
+import importlib.util
+
+APP_PATH = ROOT / "app.py"
+if not APP_PATH.exists():
+    raise FileNotFoundError(f"Expected app.py at {APP_PATH}")
+
+spec = importlib.util.spec_from_file_location("app", APP_PATH)
+app = importlib.util.module_from_spec(spec)
+assert spec.loader is not None
+spec.loader.exec_module(app)
 
 
 @pytest.fixture()
