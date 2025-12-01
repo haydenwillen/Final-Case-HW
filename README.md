@@ -1,8 +1,8 @@
 # College Football Offense Dashboard (Flask + Docker)
 
 ## 1) Executive Summary
-**Problem:** Quickly explore how offensive metrics relate to scoring across FBS teams without heavyweight BI tooling.  
-**Solution:** A lightweight Flask API that serves four correlation plots and a stats summary for a 2023 college football dataset. Everything is containerized for a one-command run.
+**Problem:** College Football is one of the fastest-moving sports in today's world. We can only attempt to measure all the actions that occur on the field using descriptive statistics. However, there are simply too many metrics nowadays, and finding relevant ones has become increasingly difficult. Is there a way to simplify these statistics so that a casual fan can follow statistics without getting lost?
+**Solution:** A lightweight, easy-to-navigate Flask API that serves four correlation plots and a stats summary for a 2023 college football dataset. Everything is containerized for a one-command run.
 
 ## 2) System Overview
 - **Course Concept(s):** Flask API + data visualization; containerization with Docker; env-based config.  
