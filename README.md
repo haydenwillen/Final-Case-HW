@@ -72,16 +72,19 @@ Looking ahead, the project could grow in a few meaningful ways. Additional endpo
 - **Dataset Credit:** Jeff Gallini (https://www.kaggle.com/datasets/jeffgallini/college-football-team-stats-2019?resource=download&select=cfb23.csv)
 
 ## 8) Development & Testing
+Local (non-Docker):
 ```bash
-# install deps
 pip install -r requirements.txt
-# run app locally (non-Docker)
 export DATA_PATH=cfb23.csv
 python app.py
-# tests
 pytest
 ```
-
+In Docker: 
+```bash
+docker build -t final-project:latest .
+docker run --rm -p 5000:5000 --env-file .env.example final-project:latest
+docker run --rm -w /app final-project:latest pytest
+```
 ## 9) Repo Layout
 ```
 Final-Project/
