@@ -86,8 +86,8 @@ pytest
 ```
 Final-Project/
 ├─ assets/
-│  └─ cfb23.csv            # 2023 CFB dataset (credit: Jeff Gallini, via Kaggle)
 |  └─ architecture.png     # Architecture Flow Chart
+│  └─ cfb23.csv            # 2023 CFB dataset (credit: Jeff Gallini, via Kaggle)
 ├─ src/
 │  └─ app.py               # Flask application and routes
 ├─ tests/
