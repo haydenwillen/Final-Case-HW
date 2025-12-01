@@ -65,7 +65,7 @@ The four offensive plots load in well under a second on a typical laptop, each s
 Looking ahead, the project could grow in a few meaningful ways. Additional endpoints—such as defensive metrics or overall efficiency stats—would round out the analysis and give users a fuller picture of team performance across both sides of the ball. A major upgrade would be moving from static images to interactive charts using libraries like Plotly or Altair; this would allow viewers to hover for exact values, zoom into dense clusters, toggle variables, and generally explore the data in a more intuitive, hands-on way. On the engineering side, adding continuous integration to automatically run pytest on every push would help catch issues early and keep the codebase stable as new features are introduced. Finally, incorporating basic observability—such as request logging, endpoint timing, or lightweight metrics—would make it easier to monitor performance and understand how the app behaves under different loads. 
 
 ## 7) Links
-- **GitHub Repo:** <INSERT-REPO-URL>  
+- **GitHub Repo:** (https://github.com/haydenwillen/Final-Case-HW)  
 - **License:** MIT (see LICENSE)  
 - **Dataset Credit:** Jeff Gallini (https://www.kaggle.com/datasets/jeffgallini/college-football-team-stats-2019?resource=download&select=cfb23.csv)
 
@@ -83,14 +83,17 @@ pytest
 ## 9) Repo Layout
 ```
 Final-Project/
-├─ app.py              # Flask app and routes
-├─ cfb23.csv           # dataset (credit: Jeff Gallini)
-├─ Dockerfile
-├─ run.sh              # one-command build/run
-├─ requirements.txt
-├─ .env.example
+├─ assets/
+│  └─ cfb23.csv            # 2023 CFB dataset (credit: Jeff Gallini, via Kaggle)
+├─ src/
+│  └─ app.py               # Flask application and routes
 ├─ tests/
-│  └─ test_app.py      # smoke tests
-├─ assets/             # add architecture.png, screenshots here
-└─ LICENSE
+│  └─ test_app.py          # pytest smoke tests
+├─ .env.example            # sample environment variables
+├─ Dockerfile              # container definition for reproducible runs
+├─ LICENSE                 # MIT license for the project
+├─ README.md               # Project documentation
+├─ requirements.txt        # Python dependencies list 
+└─ run.sh                  # one-command build/run script
+
 ```
