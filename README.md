@@ -91,6 +91,10 @@ Final-Project/
 ├─ assets/
 |  └─ architecture.png     # Architecture Flow Chart
 │  └─ cfb23.csv            # 2023 CFB dataset (credit: Jeff Gallini, via Kaggle)
+│  └─ pass-tds2.png        # `/api/ppg-vs-pass-tds` Visualization
+│  └─ rush-tds2.png        # `/api/ppg-vs-rush-tds` Visualization
+│  └─ yards2.png           # `/api/ppg-vs-total-yds` Visualization
+│  └─ turnovers2.png       # `/api/ppg-vs-turnovers` Visualization
 ├─ src/
 │  └─ app.py               # Flask application and routes
 ├─ tests/
